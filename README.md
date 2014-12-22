@@ -12,7 +12,7 @@ Files
 
 	config/orm_api.php 
 	core/MY_Model.php
-	helpers/reserve_word_helper.php	
+	helpers/orm_api_helper.php	
 
 Tables
 ======
