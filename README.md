@@ -83,6 +83,22 @@ Checking for existing tables and keys obviously has an overhead so in production
 
 	$config["fluid_schema"]=false;
 
+Further Examples
+===============
+
+	public function get_some_data($id){
+		$this->init('table_name')->id($id)->grab(true,['field LIKE'=>'A string%']);	
+	}
+
+	public function get_all_data(){
+		$this->init('table_name')->grab();
+	}
+
+	public function update_some_data($id,$data){
+		$this->init('table_name')->id($id)->update($data)->grab(false);
+	}
+
+
 API Functions
 =============
 
